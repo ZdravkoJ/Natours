@@ -1,4 +1,5 @@
 .composition {
+  //child __photo is absolutely positioned
   position: relative;
 
   &__photo {
@@ -7,6 +8,7 @@
     position: absolute;
     z-index: 10;
     transition: all 0.2s;
+    //outline-offset is something like a border but empty between the element and the border
     outline-offset: 2rem;
 
     &--p1 {
@@ -31,7 +33,7 @@
       z-index: 20;
     }
   }
-
+  //a very useful way to inversively enlarge an image or text
   &:hover &__photo:not(:hover) {
     transform: scale(0.95);
   }

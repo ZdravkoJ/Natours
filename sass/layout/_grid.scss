@@ -8,6 +8,8 @@
 
   @include clearfix;
 
+  //simbol something^= means beginning of some attribute
+  //simbol something*= means that something contain some simbol
   [class^="col-"] {
     float: left;
 
